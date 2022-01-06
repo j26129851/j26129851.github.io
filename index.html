@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>天文介紹</title>
+    <link href="bootstrap.min.css" rel="stylesheet" >
+  <style>
+    .notification-bottom {
+       position: fixed;
+       width: 100%;
+       bottom: 0;
+       left: 0;
+      }
+  </style>
+  </head>
+  <body class="bg-dark">
+      <!-- Rectangular switch 
+        <div class="navbar">
+        <a href="https://j26129851.github.io/index.html">太陽系介紹</a>
+        <a href="#news">天文知識</a>
+        <div class="dropdown">
+          <button class="dropbtn">推薦網站
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://www.nasa.gov/">NASA官網</a>
+            <a href="https://www.tam.gov.taipei/">臺北市立天文科學教育館</a>
+            <a href="https://www.tam.museum/astronomy/">網路天文館</a>
+          </div>
+        </div>
+      </div>  -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://j26129851.github.io/index.html"> <span style="font-size:0.9cm;color:rgb(255, 255, 255);">太陽系介紹</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span style="font-size:0.75cm;color:rgb(255, 255, 255);">天文知識</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="history.html">宇宙的歷史</a></li>
+                  <li><a class="dropdown-item" href="uni.html">宇宙有多大?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span style="font-size:0.75cm;color:rgb(255, 255, 255);">推薦網站</span>    
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" target="_blank" href="https://www.nasa.gov/">NASA官網</a></li>
+                  <li><a class="dropdown-item" target="_blank" href="https://www.tam.gov.taipei/">臺北市立天文科學教育館</a></li>
+                  <li><a class="dropdown-item" target="_blank" href="https://www.tam.museum/astronomy/">網路天文館</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <img src="solarsystem.jpg" alt="Workplace" usemap="#workmap" width="1680" height="650">
+      <map name="workmap">
+      <area shape="rect" coords="0,0,160,800" alt="sun" href="sun.html">
+      <area shape="circle" coords="200,320,30" alt="mercury" href="mercury.html">
+      <area shape="circle" coords="280,320,40" alt="venus" href="venus.html">
+      <area shape="circle" coords="400,320,60" alt="earth" href="earth.html">
+      <area shape="circle" coords="520,320,30" alt="mars" href="mars.html">
+      <area shape="rect" coords="600,30,860,800" alt="jupiter" href="jupiter.html">
+      <area shape="circle" coords="1050,320,120" alt="saturn" href="saturn.html">
+      <area shape="circle" coords="1300,320,80" alt="unanus" href="unanus.html">
+      <area shape="circle" coords="1500,320,80" alt="neptune" href="neptune.html">
+      </map>
+      <div class="alert alert-warning alert-dismissible fade show notification-bottom" role="alert">
+        點擊想要查看的行星即可觀看詳細內容
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </body>
+    <script src="bootstrap.bundle.min.js"></script>
+</html>
